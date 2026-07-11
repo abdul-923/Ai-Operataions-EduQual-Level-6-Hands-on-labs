@@ -2,7 +2,7 @@ Practicing lists and list types in Python
 
 #Commands Used
 
-umbers = ["1", "2", "3", "4", "5", "6"]
+numbers = ["1", "2", "3", "4", "5", "6"]
 print("numbers are: ", numbers)
 
 ##Append
