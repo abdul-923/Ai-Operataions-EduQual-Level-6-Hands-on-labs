@@ -24,3 +24,17 @@ print(greet())
 print("##Utilizing keyword argument")
 
 print(greet(name="Diana"))
+
+
+
+##Output
+
+##Define Function
+hello, Alice!
+hello, Huda!
+hello, Amna!
+##usingDefault parameters
+Hello, Guest!
+##Utilizing keyword argument
+Hello, Diana!
+
