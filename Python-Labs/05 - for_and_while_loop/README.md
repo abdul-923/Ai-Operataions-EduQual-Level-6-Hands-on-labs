@@ -1,54 +1,43 @@
-Practicingfoor and while loop
+# Lab 05 - For and While Loop
 
-#Python Commands
+## Objective
 
-##For Loop
-students = ["Ali", "Jhon", "Oliver", "Klevin"]
+The objective of this lab was to understand how `for` loops and `while` loops work in Python by solving simple practical problems.
 
-for student in students:
- print("Welcome Dear", student)
+## What I Practiced
 
+- Creating and using `for` loops
+- Iterating through a list
+- Using the `range()` function
+- Generating a multiplication table
+- Using a `while` loop for repeated execution
+- Creating a simple password authentication program
+- Running Python programs from the Linux terminal
 
-##Another Project
+## Commands Used
 
-for number in range(1, 11):
- answer = 5 * number
- print("5 x", number, "=", answer)
+- nano loops.py
+- python3 loops.py
 
+## Sample Output
 
+- Welcome Dear Ali
+- Welcome Dear Jhon
+- Welcome Dear Oliver
+- Welcome Dear Klevin
+- 5 x 1 = 5
+- 5 x 2 = 10
+- ...
+- 5 x 10 = 50
+- Enter Your Password: python123
+- Login Authenticated
 
-###While Loop
+## What I Learned
 
-correct_pass = "python123"
+In this lab, I learned the difference between `for` and `while` loops. I used a `for` loop to iterate through a list of students and generate a multiplication table. I also used a `while` loop to repeatedly ask the user for a password until the correct password was entered. This helped me understand how loops are used to automate repetitive tasks.
 
-password = input("Enter Your password: ")
+## Files
 
-while password != correct_pass:
- print("wrong! try again")
- passwrod = input("enter your password: ")
-
-print("login authenticated")
-
-
-
-####Output####
-
-Welcome Dear Ali
-Welcome Dear Jhon
-Welcome Dear Oliver
-Welcome Dear Klevin
-5 x 1 = 5
-5 x 2 = 10
-5 x 3 = 15
-5 x 4 = 20
-5 x 5 = 25
-5 x 6 = 30
-5 x 7 = 35
-5 x 8 = 40
-5 x 9 = 45
-5 x 10 = 50
-Enter Your password: python123
-login authenticated
-
-
-
+- loops.py
+- README.md
+- Screenshots
