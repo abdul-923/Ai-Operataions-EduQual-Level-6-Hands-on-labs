@@ -1,0 +1,11 @@
+
+
+import requests
+
+response = requests.get("https://api.github.com")
+
+print(response.status_code)
+
+response_data = response.json()
+
+print(response_data) 
