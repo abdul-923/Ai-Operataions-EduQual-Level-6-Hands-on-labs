@@ -17,13 +17,13 @@ The objective of this lab was to understand how decision-making works in Python 
 - score = int(input("Enter Your Score"))
 -
 - if score >= 90:
--     print("Grade: A")
+-  print("Grade: A")
 - elif score >= 80:
--     print("Grade: B")
+- print("Grade: B")
 - elif score >= 60:
--     print("Grade: C")
+- print("Grade: C")
 - else:
--     print("Grade: D")
+- print("Grade: D")
 
 ## Commands Used
 
