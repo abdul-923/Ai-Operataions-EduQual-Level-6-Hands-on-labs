@@ -15,27 +15,27 @@ The objective of this lab was to understand the basic structure of a Python prog
 
 ## Code
 
-python
-if True:
-    print("This will print because its true")
+-python
+-if True:
+-    print("This will print because its true")
 
-print("Hello, This is my first lab")
+-print("Hello, This is my first lab")
 
 
 ## Commands Used
 
-bash
-python3 first_lab.py
-mv python.py first_lab.py
-pwd
-ls
+-bash
+-python3 first_lab.py
+-mv python.py first_lab.py
+-pwd
+-ls
 
 
 ## Output
 
-text
-This will print because its true
-Hello, This is my first lab
+-text
+-This will print because its true
+-Hello, This is my first lab
 
 
 ## What I Learned
