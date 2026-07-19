@@ -46,7 +46,7 @@ Create the Python file:
 
 Run the program:
 
-`python3 deco.py`
+'python3 deco.py'
 
 ## Output
 
@@ -59,14 +59,14 @@ End
 ## What I Learned
 
 * A decorator is a function that wraps another function.
-* The `@` symbol applies a decorator to a function.
-* `func` is a parameter that receives the original function.
-* `wrapper()` adds extra behavior before and after the original function runs.
-* `*args` and `**kwargs` allow the decorator to work with functions that accept any number of arguments.
+* The `@' symbol applies a decorator to a function.
+* `func' is a parameter that receives the original function.
+* `wrapper()' adds extra behavior before and after the original function runs.
+* 'args' and '**kwargs' allow the decorator to work with functions that accept any number of arguments.
 * Decorators help avoid repeating the same code in multiple functions.
 
 ## Files
 
-* `deco.py`
-* `README.md`
+* 'deco.py'
+* 'README.md'
 * Screenshots of the program execution
