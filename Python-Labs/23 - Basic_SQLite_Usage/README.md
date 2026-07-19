@@ -43,23 +43,6 @@ python3 sqlite.py
 * Database Basics
 * Data Retrieval
 
-## Whole Lab
 
-Add one complete stitched screenshot of the entire lab here.
-
----
-
-From now on, I'll follow these rules for every README you ask me to create:
-
-* No code blocks
-* No inline code formatting
-* No clickable copy boxes
-* Everything as plain text
-* Include Files section with:
-
-  * filename.py
-  * README.md
-  * Screenshot.png
-* Include a "Whole Lab" section for the stitched screenshot
 
 
