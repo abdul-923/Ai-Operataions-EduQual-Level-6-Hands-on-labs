@@ -1,44 +1,83 @@
+# Arithmetic Expressions Lab
 
-#Practicing basic arithmatic expressions in python
+## Objective
 
-#Commands used
-## Input two numbers
+* Practice basic arithmetic operations in Python.
+* Take user input.
+* Perform calculations.
+* Display the results.
+## Files
 
-num1 = int(input("Enter num 1:"))
-num2 = int(input("Enter num 2:"))
-
-## Addition
-add_result = num1 + num2
-print(f"Addition: {num1} + {num2} = {add_result}")
-
-## Subtraction
-
-sub_result = num1 - num2
-print(f"Subtraction: {num1} - {num2} = {sub_result}")
-
-## Multiplication
-
-mul_result = num1 * num2
-print(f"Multiplication: {num1} * {num2} = {mul_result}")
+* arith_op.py
+* README.md
+* Screenshot From 2026-07-10 22-21-34.png
+* Screenshot From 2026-07-10 22-21-45.png
 
 
-## Division
+## Topics Covered
 
-div_result = num1 / num2
-print(f"Division: {num1} / {num2} = {div_result}")
+* User Input
+* Variables
+* int()
+* Addition (+)
+* Subtraction (-)
+* Multiplication (*)
+* Division (/)
+* Integer Division (//)
+* f-strings
 
-##Integer Division:
 
-int_div_result  = num1 // num2
-print(f"Integer Division: {num1} // {num2} = {int_div_result}")
+## Operations Performed
+
+* Enter two numbers.
+* Add the numbers.
+* Subtract the numbers.
+* Multiply the numbers.
+* Divide the numbers.
+* Perform integer division.
 
 
-#####Output####
+## Skills Learned
 
-Enter num 1:78
-Enter num 2:34
-Addition: 78 + 34 = 112
-Subtraction: 78 - 34 = 44
-Multiplication: 78 * 34 = 2652
-Division: 78 / 34 = 2.2941176470588234
-Integer Division: 78 // 34 = 2
+* Taking input from the user.
+* Converting string input to integers using `int()'.
+* Performing basic arithmetic operations.
+* Displaying formatted output using f-strings.
+* Understanding the difference between '/' and '//`.
+
+
+
+## Output
+
+* User enters two numbers.
+* Program displays:
+
+  * Addition
+  * Subtraction
+  * Multiplication
+  * Division
+  * Integer Division
+
+
+## The Whole Lab in One Picture
+
+Input Two Numbers
+
+↓
+
+Convert Input to Integer
+
+↓
+
+Perform Arithmetic Operations
+
+↓
+
+Display Results
+
+
+
+## Conclusion
+
+This lab helped me understand how to accept user input, convert it into integers, perform arithmetic operations, and display formatted output. It also introduced the difference between normal division ('/') and integer division (`//'), which is useful in many programming tasks.
+
