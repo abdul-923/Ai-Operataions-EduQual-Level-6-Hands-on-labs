@@ -11,6 +11,8 @@
 ## Files
 
 * tuples_sets.py
+* Screenshots
+* README.md
 
 
 ## Topics Covered
