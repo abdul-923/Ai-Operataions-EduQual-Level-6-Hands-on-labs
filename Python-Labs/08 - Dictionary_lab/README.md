@@ -1,36 +1,99 @@
+# Dictionary Lab
 
-##Practicing Dictionary , key value pairs in python lab
+## Objective
 
-
-#Commands used:
-
-#Creat Dictionary
-
-user_profile = {
-   "name": "Alice",
-   "age": 30,
-   "city": "New York"
-}
-
-print("Dictionary:", user_profile)
+* Learn how to create a dictionary.
+* Learn how to store data using key-value pairs.
+* Learn how to update values.
+* Learn how to remove keys from a dictionary.
 
 
-##Updating values:
+## Files
+
+* dict.py
+
+
+## Topics Covered
+
+* Dictionary
+* Key-value pairs
+* Accessing dictionary data
+* Updating values
+* Removing keys
+* print()
+
+
+## Concepts Learned
+
+### Creating a Dictionary
+
+Stores data using keys and values.
+
+Example:
+
+user_profile = {"name": "Alice", "age": 30, "city": "New York"}
+
+
+### Updating a Value
+
+Updates the value of an existing key.
+
+Example:
 
 user_profile["age"] = 31
 
-print("updated:", user_profile)
+
+### Removing a Key
+
+Removes a key and its value from the dictionary.
+
+Example:
 
 user_profile.pop("city")
 
-print("removed_dict:", user_profile)
+
+## Output
+
+* Created a dictionary.
+* Printed the dictionary.
+* Updated the age from 30 to 31.
+* Removed the city key.
+* Printed the updated dictionary.
 
 
-##Output##
+## Skills Learned
 
-ictionary: {'name': 'Alice', 'age': 30, 'city': 'New York'}
-updated: {'name': 'Alice', 'age': 31, 'city': 'New York'}
-removed_dict: {'name': 'Alice', 'age': 31}
+* Creating dictionaries.
+* Working with key-value pairs.
+* Updating dictionary values.
+* Removing dictionary items.
+* Printing dictionary contents.
 
-##Removing key
+## The Whole Lab in One Picture
 
+Create Dictionary
+
+↓
+
+Store Key-Value Pairs
+
+↓
+
+Print Dictionary
+
+↓
+
+Update Value
+
+↓
+
+Remove Key
+
+↓
+
+Print Updated Dictionary
+
+
+## Conclusion
+
+This lab helped me understand how Python dictionaries store information using key-value pairs. I learned how to create a dictionary, update existing values, remove keys, and display the modified dictionary. Dictionaries are useful for storing structured information such as user profiles, configuration settings, and API responses.
