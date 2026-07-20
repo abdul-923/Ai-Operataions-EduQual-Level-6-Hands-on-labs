@@ -11,6 +11,8 @@
 ## Files
 
 * dict.py
+* Screenshots
+* README.md
 
 
 ## Topics Covered
