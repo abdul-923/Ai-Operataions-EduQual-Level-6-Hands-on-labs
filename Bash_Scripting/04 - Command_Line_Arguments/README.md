@@ -8,33 +8,34 @@ This lab demonstrates how to pass command-line arguments to a Bash script. It co
 
 Files
 
-greet.sh
-greet2.sh
-README.md
-Screenshots
+- greet.sh
+- greet2.sh
+- README.md
+- Screenshots
 
 What I Practiced
 
-Passing command-line arguments to a Bash script
-Using $1 to access the first argument
-Using $# to count the number of arguments
-Displaying a usage message when no arguments are provided
-Using for loop with "$@" to process multiple arguments
-Running executable Bash scripts
+- Passing command-line arguments to a Bash script
+- Using $1 to access the first argument
+- Using $# to count the number of arguments
+- Displaying a usage message when no arguments are provided
+- Using for loop with "$@" to process multiple arguments
+- Running executable Bash scripts
 
 
 Commands Used
 
-nano greet.sh
-nano greet2.sh
-chmod +x greet.sh
-chmod +x greet2.sh
-./greet.sh Alice
-./greet2.sh Amna Ali
+- nano greet.sh
+- nano greet2.sh
+- chmod +x greet.sh
+- chmod +x greet2.sh
+- ./greet.sh Alice
+- ./greet2.sh Amna Ali
+
 Output
-Hello, Alice!
-Hello, Amna!
-Hello, Ali!
+- Hello, Alice!
+- Hello, Amna!
+- Hello, Ali!
 
 
 Learning Outcome
