@@ -1,0 +1,3 @@
+Welcome to the Logging and Redirecting Output Lab!
+This script demonstrates output management.
+Each message will be logged to a file and displayed on the console.
