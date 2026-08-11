@@ -5,7 +5,6 @@
 
 In this lab, I learned how to perform basic string manipulation in Bash scripting. The script accepts a string from the user, displays the entered text, calculates the total length of the string, extracts a specific substring, and replaces a portion of the string with another value. These operations are commonly used in Linux automation, DevOps, system administration, and text processing tasks.
 
----
 
 ## Objective
 

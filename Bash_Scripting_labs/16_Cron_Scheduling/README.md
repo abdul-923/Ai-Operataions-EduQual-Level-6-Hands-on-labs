@@ -4,7 +4,7 @@
 
 ## Lab Overview
 
-In this lab, I learned how to automate the execution of a Bash script using Cron, Linux's built-in task scheduler. Instead of manually running a script every time, Cron executes it automatically based on a schedule. This is a fundamental skill in Linux administration, DevOps, cloud computing, and cybersecurity because many maintenance, monitoring, backup, and automation tasks rely on scheduled execution.
+In this lab, I learned how to automate the execution of a Bash script using Cron, Linux's built-in task scheduler. Instead of manually running a script every time, Cron executes it automatically based on a schedule. This is a fundamental skill in cloud and cybersecurity because many maintenance, monitoring, backup, and automation tasks rely on scheduled execution.
 
 ## Objective
 
