@@ -8,8 +8,8 @@ This lab introduced the fundamentals of Docker by installing Docker on Ubuntu, c
 
 ## Files Included
 
-* README.md — Lab documentation
-* Screenshots — Lab execution and terminal results
+* README.md 
+* Screenshots 
 
 ## Commands Used
 
