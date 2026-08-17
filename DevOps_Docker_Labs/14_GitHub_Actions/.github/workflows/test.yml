@@ -1,0 +1,22 @@
+
+name: My First GitHub Action
+
+on:
+
+push:
+
+jobs:
+
+test:
+
+runs-on: ubuntu-latest
+
+steps:
+
+- name: Get repository
+
+uses: actions/checkout@v4
+
+- name: Run Bash script
+
+run: bash hello.sh
