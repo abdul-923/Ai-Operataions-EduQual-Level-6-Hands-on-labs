@@ -19,4 +19,4 @@ uses: actions/checkout@v4
 
 - name: Run Bash script
 
-run: bash hello.sh
+run: bash DevOps_Docker_Labs/14_GitHub_Actions/hello.sh
