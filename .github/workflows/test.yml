@@ -1,22 +1,15 @@
-
 name: My First GitHub Action
 
 on:
-
-push:
+  push:
 
 jobs:
+  test:
+    runs-on: ubuntu-latest
 
-test:
+    steps:
+      - name: Get repository
+        uses: actions/checkout@v4
 
-runs-on: ubuntu-latest
-
-steps:
-
-- name: Get repository
-
-uses: actions/checkout@v4
-
-- name: Run Bash script
-
-run: bash DevOps_Docker_Labs/14_GitHub_Actions/hello.sh
+      - name: Run Bash script
+        run: bash 14_GitHub_Actions/hello.sh
