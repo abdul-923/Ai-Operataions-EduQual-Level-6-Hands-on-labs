@@ -9,10 +9,10 @@ A simple HTML webpage was created with username and password input fields. Selen
 
 ## Files Included
 
-- test_page.html — Sample HTML webpage containing username and password fields
-- send_keys_lab.py — Python Selenium script used to automate form filling
-- README.md — Documentation for the lab
-- screenshots/ — Screenshots showing the lab execution and successful output
+- test_page.html 
+- send_keys_lab.py 
+- README.md
+- screenshots
 
 ## Commands Used
 
