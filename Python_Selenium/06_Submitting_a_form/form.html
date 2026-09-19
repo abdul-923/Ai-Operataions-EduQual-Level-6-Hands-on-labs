@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+
+<html lang="en"> <head> <meta charset="UTF-8"> <title>Form Submission Lab</title> </head> <body>
+<h1>Contact Form</h1>
+
+<form id="contactForm">
+
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    <br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <br><br>
+
+    <button type="submit">Submit</button>
+
+</form>
+
+<script>
+    const form = document.getElementById('contactForm');
+
+    form.addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+
+        console.log('Name:', name);
+        console.log('Email:', email);
+
+        alert('Form submitted successfully!');
+    });
+</script>
+</body> </html>
