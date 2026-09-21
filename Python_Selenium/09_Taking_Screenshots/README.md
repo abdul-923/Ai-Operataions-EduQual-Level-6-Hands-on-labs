@@ -1,5 +1,5 @@
 
-# Python Selenium Lab 10 — Taking Screenshots
+# Python Selenium Lab 09 — Taking Screenshots
 
 ## Overview
 

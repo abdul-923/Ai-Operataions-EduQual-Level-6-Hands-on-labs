@@ -1,5 +1,5 @@
 
-# Python Selenium Lab 11 — Locating Multiple Elements
+# Python Selenium Lab 10 — Locating Multiple Elements
 
 ## Overview
 

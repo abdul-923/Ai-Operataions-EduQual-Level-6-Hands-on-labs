@@ -1,4 +1,4 @@
-# Python Selenium Lab 9 — Handling Waits
+# Python Selenium Lab 8 — Handling Waits
 
 ## Overview
 
