@@ -1,0 +1,96 @@
+history
+    1  sudo -i
+    2  sudo dnf update -y
+    3  sudo subscription-manager register
+    4  sudo dnf update -y
+    5  clear
+    6  sudo reboot
+    7  sudo subscription-manager attach --auto
+    8  pwd
+    9  ls
+   10  ls -l
+   11  whoami
+   12  sudo dnf install open-vm-tools
+   13  open-vm-tools-desktop -y
+   14  pwd
+   15  ls
+   16  cd Desktop
+   17  cd ..
+   18  sudo dnf install git curl wget vim nano net-tools htop unzip tar -y
+   19  sudo shutdown
+   20  shutdown -c
+   21  sudo poweroff
+   22  sudo dnf get-update && dnf get-upgrade -y
+   23  sudo dnf check-update
+   24  sudo subscription-manager status
+   25  sudo subscription-manager list --consumed
+   26  sudo subscription-manager repos --list-enabled
+   27  sudo subscription-manager clean
+   28  sudo subscription-manager status
+   29  sudo subscription-manager register
+   30  sudo subscription-manager status
+   31  sudo dnf repolist
+   32  sudo dnf update -y
+   33  ls -l /etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+   34  sudo rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+   35  sudo dnf clean packages
+   36  sudo dnf update -y
+   37  rpm -qa gpg-pubkey*
+   38  rpm -qi gpg-pubkey-fd431d51-4ae0493b
+   39  rpm -qi gpg-pubkey-5a6340b3-6229229e
+   40  rpm -ql redhat-release | grep RPM-GPG
+   41  sudo rpmkeys --import /etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+   42  sudo rpmkeys --import /etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-beta
+   43  sudo dnf clean packages
+   44  sudo dnf update -y
+   45  sudo dnf update -y --nogpgcheck
+   46  sudo reboot
+   47  sudo apt update -y
+   48  sudo dnf update -y
+   49  sudo dsnf clean packages
+   50  sudo dnf clean packages
+   51  sudo dnf update -y
+   52  sudo dnf upgrade -y
+   53  sudo dnf check-update
+   54  sudo dnf update --refresh
+   55  uname -r
+   56  sudo dnf install curl -y
+   57  whomai
+   58  whoami
+   59  su -i
+   60  su -a
+   61  su --help\
+   62  su --help
+   63  clear
+   64  pwd
+   65  ls
+   66  sestatus
+   67  history
+   68  clear
+   69  sudo systemctl status sshd
+   70  ip a
+   71  ipconfig
+   72  ipconfig -a
+   73  ifconfig -a
+   74  sudo dnf install git -y
+   75  git --version
+   76  git config --global user.name "abdul-923"
+   77  git config --global user.email "abdulai9023@gmail.com"
+   78  git config --global --list
+   79  ls
+   80  git clone https://github.com/abdul-923/Ai-Operataions-EduQual-Level-6-Hands-on-labs
+   81  ls
+   82  cd Ai-Operataions-EduQual-Level-6-Hands-on-labs
+   83  ls
+   84  mkdir "Red_Hat_System_Administration_1"
+   85  pwd
+   86  git status
+   87  git add "Red_Hat_System_Administration_1"
+   88  git commit -m "Build new Directory"
+   89  git push 
+   90  echo history >> history.txt
+   91  ls
+   92  cd "[200~Red_Hat_System_Administration_1"
+   93  cd "Red_Hat_System_Administration_1"
+   94  ls
+   95  history >> history.txt
