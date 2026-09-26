@@ -1,0 +1,32 @@
+    1  top
+    2  top >> top_report.txt
+    3  top
+    4  mpstat
+    5  mpstat -P ALL 1 5
+    6  free -h
+    7  top -o %MEM
+    8  df -h
+    9  du -sh /var/log/*
+   10  du -sh
+   11  du -h
+   12  du
+   13  lsblk
+   14  free -h
+   15  df -h
+   16  sudo iotop -o
+   17  dnf install iotop -y
+   18  sudo dnf install iotop -y
+   19  sudo iotop -o
+   20  ss -tulnp
+   21  nload
+   22  sudo dnf install nload -y
+   23  ps aux --sort=-%cpu | head -n 5  # Top 5 CPU-consuming processes 
+   24  ps aux --sort=-%mem | head -n 5  # Top 5 memory-consuming processes
+   25  podman stats 
+   26  journalctl -p err -b  # View error logs since last boot  
+   27  htop
+   28  sudo dnf install htop -y
+   29  sudo dnf install https://fedoraproject.
+   30  ping -c 4 google.com
+   31  clear
+   32  history >> lab_commands.txt

@@ -1,0 +1,339 @@
+    1  sudo -i
+    2  sudo dnf update -y
+    3  sudo subscription-manager register
+    4  sudo dnf update -y
+    5  clear
+    6  sudo reboot
+    7  sudo subscription-manager attach --auto
+    8  pwd
+    9  ls
+   10  ls -l
+   11  whoami
+   12  sudo dnf install open-vm-tools
+   13  open-vm-tools-desktop -y
+   14  pwd
+   15  ls
+   16  cd Desktop
+   17  cd ..
+   18  sudo dnf install git curl wget vim nano net-tools htop unzip tar -y
+   19  sudo shutdown
+   20  shutdown -c
+   21  sudo poweroff
+   22  sudo dnf get-update && dnf get-upgrade -y
+   23  sudo dnf check-update
+   24  sudo subscription-manager status
+   25  sudo subscription-manager list --consumed
+   26  sudo subscription-manager repos --list-enabled
+   27  sudo subscription-manager clean
+   28  sudo subscription-manager status
+   29  sudo subscription-manager register
+   30  sudo subscription-manager status
+   31  sudo dnf repolist
+   32  sudo dnf update -y
+   33  ls -l /etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+   34  sudo rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+   35  sudo dnf clean packages
+   36  sudo dnf update -y
+   37  rpm -qa gpg-pubkey*
+   38  rpm -qi gpg-pubkey-fd431d51-4ae0493b
+   39  rpm -qi gpg-pubkey-5a6340b3-6229229e
+   40  rpm -ql redhat-release | grep RPM-GPG
+   41  sudo rpmkeys --import /etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+   42  sudo rpmkeys --import /etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-beta
+   43  sudo dnf clean packages
+   44  sudo dnf update -y
+   45  sudo dnf update -y --nogpgcheck
+   46  sudo reboot
+   47  pwd
+   48  ls
+   49  history
+   50  sudo apt update -y
+   51  sudo dnf update -y
+   52  sudo dsnf clean packages
+   53  sudo dnf clean packages
+   54  sudo dnf update -y
+   55  sudo dnf upgrade -y
+   56  sudo dnf check-update
+   57  sudo dnf update --refresh
+   58  uname -r
+   59  sudo dnf install curl -y
+   60  whomai
+   61  whoami
+   62  su -i
+   63  su -a
+   64  su --help\
+   65  su --help
+   66  clear
+   67  pwd
+   68  ls
+   69  sestatus
+   70  history
+   71  clear
+   72  sudo systemctl status sshd
+   73  ip a
+   74  ipconfig
+   75  ipconfig -a
+   76  ifconfig -a
+   77  sudo dnf install git -y
+   78  git --version
+   79  git config --global user.name "abdul-923"
+   80  git config --global user.email "abdulai9023@gmail.com"
+   81  git config --global --list
+   82  ls
+   83  git clone https://github.com/abdul-923/Ai-Operataions-EduQual-Level-6-Hands-on-labs
+   84  ls
+   85  cd Ai-Operataions-EduQual-Level-6-Hands-on-labs
+   86  ls
+   87  mkdir "Red_Hat_System_Administration_1"
+   88  pwd
+   89  git status
+   90  git add "Red_Hat_System_Administration_1"
+   91  git commit -m "Build new Directory"
+   92  git push 
+   93  echo history >> history.txt
+   94  ls
+   95  cd "[200~Red_Hat_System_Administration_1"
+   96  cd "Red_Hat_System_Administration_1"
+   97  ls
+   98  history >> history.txt
+   99  nano README.md
+  100  git add . ""
+  101  git add .
+  102  git commit -m "Bulid new repo"
+  103  git push origin main
+  104  git add .
+  105  git commit -m "raedme changes"
+  106  cd ..
+  107  git add .
+  108  git commit -m "chnages in raedme"
+  109  git push origin main
+  110  git config --global credentail.helper store
+  111  git push
+  112  nano GITHUB
+  113  git add .
+  114  git commit "chages"
+  115  git commit -m "chages"
+  116  git push origin main
+  117  sudo -v
+  118  sudo -i
+  119  nano README.md
+  120  git add .
+  121  git commit -m "Build new Lab Repo"
+  122  git push origin main
+  123  git config --global credential.helper store
+  124  git push
+  125  clear
+  126  mkdir "03_Monitoring_&_Managing_Processes"
+  127  cd "03_Monitoring_&_Managing_Processes"
+  128  ps aux
+  129  ps aux | grep nginx
+  130  top
+  131  htop
+  132  sudo dnf install htop
+  133  sudo aux | grep apache
+  134  ps aux | grep apache
+  135  ps aux | grep mysql
+  136  top
+  137  sudo dnf install htop
+  138  firfox
+  139  firefox
+  140  ps aux | grep firefox
+  141  kill 4837
+  142  firefox
+  143  pidof firefox
+  144  kill 5514 5475 5471 5464 5427 5377 5372 5347 5276
+  145  ps aux | grep firefox'
+  146  ps aux | grep firefox
+  147  pkill firefox
+  148  jobs
+  149  sleep 300 &
+  150  jobs
+  151  fg %1
+  152  bg %1
+  153  jobs
+  154  nano README.md
+  155  git add .
+  156  git commit -m "Added Lab 3"
+  157  git push origin main
+  158  ls
+  159  u -i
+  160  su -
+  161  sudo -i
+  162  ls
+  163  mkdir "04_managing_services_with_systemd"
+  164  cd "04_managing_services_with_systemd"
+  165  clear
+  166  systemctl list-units --type=services --state=running
+  167  systemctl list-units --type=service --state=running
+  168  systemctl status sshd
+  169  systemctl status apache
+  170  systemctl status nginx
+  171  ps aux apache
+  172  psaux apache
+  173  psaux | grep apache
+  174  pid od apache
+  175  pidof apache
+  176  psaux
+  177  paux
+  178  ps aux
+  179  ps aux | grep apache
+  180  systemctl status ubuntu
+  181  systemctl status rhsm
+  182  systemctl stop sshd
+  183  systemctl status sshd
+  184  systemctl start sshd
+  185  systemctl status sshd
+  186  systemctl restart sshd
+  187  systemctl stop sshd
+  188  systemctl status sshd
+  189  systemctl disable sshd
+  190  systemctl enable sshd
+  191  systemctl status sshd
+  192  systemctl start sshd
+  193  systemctl status sshd
+  194  systemctl cat sshd
+  195  sudo journalctl -u sshd
+  196  history >> history.txt
+  197  nano README.md
+  198  clear
+  199  exit
+  200  ls
+  201  mkdir "05_Configuring_&_Securing_SSH"
+  202  cd "05_Configuring_&_Securing_SSH"
+  203  ssh -V
+  204  sudo systemctl ssh
+  205  sudo systemctl ssh status
+  206  sudo systemctl status ssh
+  207  sudo systemctl status sshd
+  208  clear
+  209  sudo -i
+  210  history >> commands_history.txt
+  211  nano README.md
+  212  ls
+  213  pwd
+  214  whoami
+  215  git add .
+  216  git commit "repo"
+  217  git commit -m "repo"
+  218  git push origin main
+  219  ls
+  220  mkdir "06_Analyzing_&_storing_logs"
+  221  ls
+  222  cd '06_Analyzing_&_storing_logs'
+  223  journetctl
+  224  journalctl
+  225  clear
+  226  journalctl -u sshd
+  227  ls -l /va/log
+  228  ls -l /var/log
+  229  ls /var/log
+  230  cat /var/log/messages
+  231  sudo cat /var/log/messages
+  232  sudo cat /var/log/secure
+  233  sudo journalctl -f
+  234  sudo grep "error" /var/log/messages
+  235  sudo grep -i "fail" /var/log/secure
+  236  sudo grep -c "authentication failure" /var/log/secure
+  237  history >> commands_history
+  238  nano README.md
+  239  clear
+  240  cd ..
+  241  cat /etc/logrotate.conf
+  242  ls /etc/logrotate.d
+  243  sudo journalctl -disk--usage
+  244  sudo journalctl --disk-usage
+  245  clear\
+  246  clear
+  247  mkdir "07_Configuring_Network_Interfaces"
+  248  cd  "07_Configuring_Network_Interfaces"
+  249  man pwd
+  250  man networkmanager
+  251  networkmanager -h
+  252  pwd -h
+  253  help pwd
+  254  help networkmanager
+  255  info networkmanager
+  256  sudo systemctl status networkmanager
+  257  sudo systemctl status NetworkManager
+  258  nmcli device status
+  259  nmcli device show
+  260  nmcli connection show
+  261  nmcli connection show "Wired connection 1"
+  262  nmcli connection show "wired connection 1"
+  263  nmcli show connection
+  264  nmcli connection show
+  265  nmcli connection show "ens160"
+  266  hostnamectl
+  267  ip addr show
+  268  clear
+  269  nano README.md
+  270  cd ..
+  271  ls
+  272  clear
+  273  mkdir "08_Accessing_&_Managing_Linux_Filesystems"
+  274  cd "08_Accessing_&_Managing_Linux_Filesystems"
+  275  lsblk
+  276  lsblk -f
+  277  sudo fdsik -l
+  278  fdisk -l
+  279  sudo fdisk -l
+  280  sudo fdisk -l /dev/nvme0n1p1 
+  281  sudo blkid
+  282  lsblk
+  283  sudo fdisk /dev/sdb
+  284  sudo pvs
+  285  sudo vgs
+  286  clear
+  287  nano README.md
+  288  git add .
+  289  git commit -m "Hand on Lab"
+  290  git push origin main
+  291  printf "protocol=https\nhost=github.com\n\n" | git credential reject
+  292  git push origin main
+  293  cd ..
+  294  clear
+  295  sudo jornalctl sshd
+  296  sudo journalctl sshd
+  297  sudo journalctl ssh
+  298  sudo journalctl -u ssh
+  299  sudo journalctl -i ssh
+  300  sudo journalctl -u sshd
+  301  clear
+  302  journalctl -f
+  303  clear
+  304  git config --global credential.helper store
+  305  printf "protocol=https\nhost=github.com\n\n" | git credential reject
+  306  git push origin main
+  307  printf "protocol=https\nhost=github.com\n\n" | git credential reject
+  308  git config --global credential.helper store
+  309  git remote -v
+  310  git push origin main
+  311  clear
+  312  ls
+  313  git push origin main
+  314  ls
+  315  mkdir "09_Working_with_Network_File_Systems_NFS_&_CIFS"
+  316  cd "09_Working_with_Network_File_Systems_NFS_&_CIFS"
+  317  ip a
+  318  ping 192.168.8.128
+  319  sudo dnf install -y nfs-utils cifs-utils
+  320  showmount -e 192.168.8.128
+  321  sudo mkdir -p /mnt/nfs_share
+  322  sudo mount -t nfs 192.168.8.128:/srv/nfs/share /mnt/nfs_share
+  323  df hT | grep nfs
+  324  df -hT | grep nfs
+  325  ls -l /mnt/nfs_share
+  326  cat /mnt/nfs_share/test.txt
+  327  clear
+  328  ping 192.168.18.1
+  329  smbclient -L //192.168.18.1 -U core-i7-latest-\pc
+  330  ifconfig -a
+  331  smbclient -L //192.168.18.80 -U core-i7-latest-\pc
+  332  smbclient -L //192.168.18.80 -U pc
+  333  smbclient -L //192.168.8.1 -U pc
+  334  smbclient -L //192.168.8.1 -U core-i7-latest-\pc
+  335  ls
+  336  nano README.md
+  337  clear
+  338  ip a
+  339  history >> lab_commands.txt
