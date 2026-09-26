@@ -1,0 +1,230 @@
+    1  sudo -i
+    2  sudo dnf update -y
+    3  sudo subscription-manager register
+    4  sudo dnf update -y
+    5  clear
+    6  sudo reboot
+    7  sudo subscription-manager attach --auto
+    8  pwd
+    9  ls
+   10  ls -l
+   11  whoami
+   12  sudo dnf install open-vm-tools
+   13  open-vm-tools-desktop -y
+   14  pwd
+   15  ls
+   16  cd Desktop
+   17  cd ..
+   18  sudo dnf install git curl wget vim nano net-tools htop unzip tar -y
+   19  sudo shutdown
+   20  shutdown -c
+   21  sudo poweroff
+   22  sudo dnf get-update && dnf get-upgrade -y
+   23  sudo dnf check-update
+   24  sudo subscription-manager status
+   25  sudo subscription-manager list --consumed
+   26  sudo subscription-manager repos --list-enabled
+   27  sudo subscription-manager clean
+   28  sudo subscription-manager status
+   29  sudo subscription-manager register
+   30  sudo subscription-manager status
+   31  sudo dnf repolist
+   32  sudo dnf update -y
+   33  ls -l /etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+   34  sudo rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+   35  sudo dnf clean packages
+   36  sudo dnf update -y
+   37  rpm -qa gpg-pubkey*
+   38  rpm -qi gpg-pubkey-fd431d51-4ae0493b
+   39  rpm -qi gpg-pubkey-5a6340b3-6229229e
+   40  rpm -ql redhat-release | grep RPM-GPG
+   41  sudo rpmkeys --import /etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+   42  sudo rpmkeys --import /etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-beta
+   43  sudo dnf clean packages
+   44  sudo dnf update -y
+   45  sudo dnf update -y --nogpgcheck
+   46  sudo reboot
+   47  pwd
+   48  ls
+   49  history
+   50  sudo apt update -y
+   51  sudo dnf update -y
+   52  sudo dsnf clean packages
+   53  sudo dnf clean packages
+   54  sudo dnf update -y
+   55  sudo dnf upgrade -y
+   56  sudo dnf check-update
+   57  sudo dnf update --refresh
+   58  uname -r
+   59  sudo dnf install curl -y
+   60  whomai
+   61  whoami
+   62  su -i
+   63  su -a
+   64  su --help\
+   65  su --help
+   66  clear
+   67  pwd
+   68  ls
+   69  sestatus
+   70  history
+   71  clear
+   72  sudo systemctl status sshd
+   73  ip a
+   74  ipconfig
+   75  ipconfig -a
+   76  ifconfig -a
+   77  sudo dnf install git -y
+   78  git --version
+   79  git config --global user.name "abdul-923"
+   80  git config --global user.email "abdulai9023@gmail.com"
+   81  git config --global --list
+   82  ls
+   83  git clone https://github.com/abdul-923/Ai-Operataions-EduQual-Level-6-Hands-on-labs
+   84  ls
+   85  cd Ai-Operataions-EduQual-Level-6-Hands-on-labs
+   86  ls
+   87  mkdir "Red_Hat_System_Administration_1"
+   88  pwd
+   89  git status
+   90  git add "Red_Hat_System_Administration_1"
+   91  git commit -m "Build new Directory"
+   92  git push 
+   93  echo history >> history.txt
+   94  ls
+   95  cd "[200~Red_Hat_System_Administration_1"
+   96  cd "Red_Hat_System_Administration_1"
+   97  ls
+   98  history >> history.txt
+   99  nano README.md
+  100  git add . ""
+  101  git add .
+  102  git commit -m "Bulid new repo"
+  103  git push origin main
+  104  git add .
+  105  git commit -m "raedme changes"
+  106  cd ..
+  107  git add .
+  108  git commit -m "chnages in raedme"
+  109  git push origin main
+  110  git config --global credentail.helper store
+  111  git push
+  112  nano GITHUB
+  113  git add .
+  114  git commit "chages"
+  115  git commit -m "chages"
+  116  git push origin main
+  117  sudo -v
+  118  sudo -i
+  119  nano README.md
+  120  git add .
+  121  git commit -m "Build new Lab Repo"
+  122  git push origin main
+  123  git config --global credential.helper store
+  124  git push
+  125  clear
+  126  mkdir "03_Monitoring_&_Managing_Processes"
+  127  cd "03_Monitoring_&_Managing_Processes"
+  128  ps aux
+  129  ps aux | grep nginx
+  130  top
+  131  htop
+  132  sudo dnf install htop
+  133  sudo aux | grep apache
+  134  ps aux | grep apache
+  135  ps aux | grep mysql
+  136  top
+  137  sudo dnf install htop
+  138  firfox
+  139  firefox
+  140  ps aux | grep firefox
+  141  kill 4837
+  142  firefox
+  143  pidof firefox
+  144  kill 5514 5475 5471 5464 5427 5377 5372 5347 5276
+  145  ps aux | grep firefox'
+  146  ps aux | grep firefox
+  147  pkill firefox
+  148  jobs
+  149  sleep 300 &
+  150  jobs
+  151  fg %1
+  152  bg %1
+  153  jobs
+  154  nano README.md
+  155  git add .
+  156  git commit -m "Added Lab 3"
+  157  git push origin main
+  158  ls
+  159  u -i
+  160  su -
+  161  sudo -i
+  162  ls
+  163  mkdir "04_managing_services_with_systemd"
+  164  cd "04_managing_services_with_systemd"
+  165  clear
+  166  systemctl list-units --type=services --state=running
+  167  systemctl list-units --type=service --state=running
+  168  systemctl status sshd
+  169  systemctl status apache
+  170  systemctl status nginx
+  171  ps aux apache
+  172  psaux apache
+  173  psaux | grep apache
+  174  pid od apache
+  175  pidof apache
+  176  psaux
+  177  paux
+  178  ps aux
+  179  ps aux | grep apache
+  180  systemctl status ubuntu
+  181  systemctl status rhsm
+  182  systemctl stop sshd
+  183  systemctl status sshd
+  184  systemctl start sshd
+  185  systemctl status sshd
+  186  systemctl restart sshd
+  187  systemctl stop sshd
+  188  systemctl status sshd
+  189  systemctl disable sshd
+  190  systemctl enable sshd
+  191  systemctl status sshd
+  192  systemctl start sshd
+  193  systemctl status sshd
+  194  systemctl cat sshd
+  195  sudo journalctl -u sshd
+  196  history >> history.txt
+  197  nano README.md
+  198  clear
+  199  exit
+  200  ls
+  201  mkdir "05_Configuring_&_Securing_SSH"
+  202  cd "05_Configuring_&_Securing_SSH"
+  203  ssh -V
+  204  sudo systemctl ssh
+  205  sudo systemctl ssh status
+  206  sudo systemctl status ssh
+  207  sudo systemctl status sshd
+  208  clear
+  209  sudo -i
+  210  history >> commands_history.txt
+  211  nano README.md
+  212  ls
+  213  mkdir "06_Analyzing_&_storing_logs"
+  214  ls
+  215  cd '06_Analyzing_&_storing_logs'
+  216  journetctl
+  217  journalctl
+  218  clear
+  219  journalctl -u sshd
+  220  ls -l /va/log
+  221  ls -l /var/log
+  222  ls /var/log
+  223  cat /var/log/messages
+  224  sudo cat /var/log/messages
+  225  sudo cat /var/log/secure
+  226  sudo journalctl -f
+  227  sudo grep "error" /var/log/messages
+  228  sudo grep -i "fail" /var/log/secure
+  229  sudo grep -c "authentication failure" /var/log/secure
+  230  history >> commands_history
