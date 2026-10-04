@@ -3,7 +3,6 @@ version: 0.2
 phases:
   pre_build:
     commands:
-      - cd "DevSysyOps_Engineering_Labs/05_Continuous_Deployment_with_AWS_CodePipeline_ECS_&_Docker"
       - echo Logging in to Amazon ECR...
       - ACCOUNT_ID=$(aws sts get-caller-identity --query Account --output text)
       - REPOSITORY_URI=$ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/aws-codepipeline-lab
@@ -14,12 +13,13 @@ phases:
     commands:
       - echo Build started on $(date)
       - echo Building Docker image...
-      - docker build -t $REPOSITORY_URI:latest .
-      - docker tag $REPOSITORY_URI:latest $REPOSITORY_URI:$IMAGE_TAG
+      - docker build -t $REPOSITORY_URI:latest "DevSysyOps_Engineering_Labs/05_Continuous_Deployment_with_AWS_CodePipeline_ECS_&_Docker"
 
   post_build:
     commands:
       - echo Build completed on $(date)
+      - echo Tagging Docker image...
+      - docker tag $REPOSITORY_URI:latest $REPOSITORY_URI:$IMAGE_TAG
       - echo Pushing Docker image to Amazon ECR...
       - docker push $REPOSITORY_URI:latest
       - docker push $REPOSITORY_URI:$IMAGE_TAG
