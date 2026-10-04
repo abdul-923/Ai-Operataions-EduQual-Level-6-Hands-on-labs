@@ -1,0 +1,41 @@
+    1  clear
+    2  nano app.js
+    3  nano package.json
+    4  nano Dcokerfile
+    5  docker build -t aws-codepipeline-lab .
+    6  docker build -t aws-codepipeline-lab.
+    7  docker build -t aws-codepipeline-lab .
+    8  ls
+    9  cat Dockerfile
+   10  mv Dcokerfile Dockerfile
+   11  docker build -t aws-codepipeline-lab .
+   12  nano Dockerfile
+   13  docker build -t aws-codepipeline-lab .
+   14  docker run --rm aws-codepipeline-lab
+   15  docker images
+   16  docker ps
+   17  docker ps -a
+   18  git status
+   19  git add .
+   20  git status
+   21  git commit -m "Build CodePipeline Lab"
+   22  git push origin main
+   23  clear
+   24  ls
+   25  nan buildspec.yml
+   26  nano buildspec.yml
+   27  git add .
+   28  git commit -m "Added yaml file"
+   29  git push origin main
+   30  node app.js
+   31  sudo apt install nodejs
+   32  node app.js
+   33  git add .
+   34  git commit -m "updated app.js"
+   35  git push origin main
+   36  git add ,
+   37  git commit -m "yaml"
+   38  git add .
+   39  git commit -m "yaml"
+   40  git push origin main
+   41  history >> Commands_history.txt
