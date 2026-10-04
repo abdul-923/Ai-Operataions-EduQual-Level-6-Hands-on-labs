@@ -11,7 +11,7 @@ phases:
     commands:
       - echo Build started on $(date)
       - echo Building the Docker image...
-      - "DevSysyOps_Engineering_Labs/04_Implementing_Continuous_Integration_(CI)_with_AWS_CodeBuild_&_Docker"
+      - cd "DevSysyOps_Engineering_Labs/04_Implementing_Continuous_Integration_(CI)_with_AWS_CodeBuild_&_Docker"
       - docker build -t $REPOSITORY_URI:latest .
       - docker tag $REPOSITORY_URI:latest $REPOSITORY_URI:$IMAGE_TAG
   post_build:
