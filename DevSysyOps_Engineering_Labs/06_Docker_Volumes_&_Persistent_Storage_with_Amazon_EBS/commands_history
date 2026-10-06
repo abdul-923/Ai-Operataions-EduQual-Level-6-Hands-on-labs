@@ -1,0 +1,1000 @@
+ 1012  docker volumes
+ 1013  docker volume
+ 1014  docker inspect volume
+ 1015  docker inspect volumes
+ 1016  docker run -d --name nginx-volume -v my-volume:/usr/share/nginx/html -p 8081:80 nginx
+ 1017  docker cp ~/host-directory/host-file.txt nginx-volume:/usr/share/nginx/html/
+ 1018  curl http://localhost:8081/host-file.txt
+ 1019  history
+ 1020  nano README.md
+ 1021  git add .
+ 1022  git commit -m "Build Another Docker Lab"
+ 1023  git push origim main
+ 1024  git push origin main
+ 1025  clear
+ 1026  cd ..
+ 1027  clear 
+ 1028  mkdir "09_Docker_Networking"
+ 1029  cd "09_Docker_Networking"
+ 1030  docker run -d --name container2 ubuntu
+ 1031  docker
+ 1032  docker ps
+ 1033  docker ps -a
+ 1034  docker run -d --name container2 ubuntu sleep 1000
+ 1035  docker stop container2
+ 1036  docker run -d --name container2 ubuntu sleep 1000
+ 1037  docker inspect conatiner
+ 1038  docker inspect container
+ 1039  docker run -it --name container2 ubuntu bash
+ 1040  docker ps 
+ 1041  docker run -it --name container3 ubuntu bash
+ 1042  docker ps -a
+ 1043  docker stop a43d62912939
+ 1044  docker stop 4000a89ce74f
+ 1045  docker stop 4b64a95921ee
+ 1046  docker ps -a
+ 1047  docker images -a
+ 1048  docker rm -f $(docker ps -aq)
+ 1049  docker images
+ 1050  docker rmi -f $(docker images -q)
+ 1051  docker images
+ 1052  docker containers
+ 1053  docker container
+ 1054  docker ps -a
+ 1055  nano README.md
+ 1056  git add .\
+ 1057  git add .
+ 1058  git commit -m "Build Repo"
+ 1059  git push origin main
+ 1060  docker inspect container2
+ 1061  cd ..
+ 1062  mkdir "10_Creating_a_Custom_Networking-Bridge"
+ 1063  ls "10_Creating_a_Custom_Networking-Bridge"
+ 1064  cd "10_Creating_a_Custom_Networking-Bridge"
+ 1065  docker network create mynet
+ 1066  docker run -d --name container1 --network mynet nginx
+ 1067  docker run -d --name container2 --network mynet nginx
+ 1068  docker exec -it container1 /bin/bash
+ 1069  nano README.md
+ 1070  clear
+ 1071  git add .
+ 1072  git commit -m "Build another repo"
+ 1073  docker push origin main
+ 1074  docker push --help
+ 1075  git push origin main
+ 1076  clear
+ 1077  cd ..
+ 1078  clear
+ 1079  cd ..
+ 1080  python3 version
+ 1081  docker compose --version
+ 1082  sudo apt update
+ 1083  sudo -i
+ 1084  sudo -a
+ 1085  sudo -s
+ 1086  sudo apt install docker-compose-plugin
+ 1087  clear
+ 1088  sudo apt install ca-certificates curl
+ 1089  sudo install -m 0755 -d /etc/apt/keyrings
+ 1090  sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
+ 1091  sudo chmod a+r /etc/apt/keyrings/docker.asc
+ 1092  sudo tee /etc/apt/sources.list.d/docker.sources <<EOF Types: deb URIs: https://download.docker.com/linux/ubuntu Suites: $(. /etc/os-release && echo "${UBUNTU_CODENAME:-$VERSION_CODENAME}") Components: stable Architectures: $(dpkg --print-architecture) Signed-By: /etc/apt/keyrings/docker.asc EOF
+ 1093  sudo tee /etc/apt/sources.list.d/docker.list <<< "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu $(. /etc/os-release && echo $VERSION_CODENAME) stable"
+ 1094  sudo apt update
+ 1095  sudo apt install docker-compose-plugin
+ 1096  docker compose --version
+ 1097  docker compose version
+ 1098  clear
+ 1099  ls
+ 1100  mkdir "11_Docker_Compose_Basics"
+ 1101  cd "11_Docker_Compose_Basics"
+ 1102  nano docker-compose.yml
+ 1103  docker-compose up
+ 1104  docker --version
+ 1105  docker-compose version
+ 1106  docker compose version
+ 1107  docker compose up
+ 1108  nano docker-compose.yml
+ 1109  docker compose up
+ 1110  http://localhost:8080
+ 1111  clear
+ 1112  docker ps -a
+ 1113  docker ps
+ 1114  docker compose up -d
+ 1115  docker pdocker ps
+ 1116  docker ps
+ 1117  docker stop 11e9788a9047
+ 1118  history
+ 1119  nano docker-compose.yml
+ 1120  nano README.md
+ 1121  git add .
+ 1122  git commit -m "Build Docker Lab Repo"
+ 1123  git push origin main
+ 1124  cd ..
+ 1125  ls
+ 1126  mkdir "12_Docker_Compose_for_a_Web_DB_Stack"
+ 1127  cd "12_Docker_Compose_for_a_Web_DB_Stack"
+ 1128  nano docker-compose.yml
+ 1129  docker compose up
+ 1130  docker compose up -d
+ 1131  docker ps
+ 1132  docker-compose exec db mysql -u root -p
+ 1133  docker compose exec db mysql -u root -p
+ 1134  docker compose down
+ 1135  history
+ 1136  nano README.md
+ 1137  git add .
+ 1138  git commit -m "Build Repo"
+ 1139  git push origin main
+ 1140  docker ps -a
+ 1141  docker images
+ 1142  ls
+ 1143  cd ..
+ 1144  pa aux
+ 1145  ps aux
+ 1146  htop
+ 1147  sudo apt install htop
+ 1148  htop
+ 1149  top
+ 1150  fdisk
+ 1151  fdisk -h
+ 1152  fdisk -l
+ 1153  df -h
+ 1154  lsblk
+ 1155  du -sh
+ 1156  du -sh *
+ 1157  df -h
+ 1158  free -h
+ 1159  lsblk
+ 1160  df -h
+ 1161  docker run nginx
+ 1162  docker run -d nginx
+ 1163  docker run -it nginx
+ 1164  docker ps
+ 1165  docker exec -it 66b03c3c832c /bin/bash
+ 1166  docker logs -f nginx
+ 1167  docker ps 
+ 1168  docker logs -f 66b03c3c832c 
+ 1169  docker stop 66b03c3c832c 
+ 1170  dcoker ps -a
+ 1171  docker ps -a
+ 1172  docker 
+ 1173  docker ps
+ 1174  docker ps -a
+ 1175  docker images -a
+ 1176  ls
+ 1177  mkdir "13_Docker_Logs_and_Debugging"
+ 1178  cd "13_Docker_Logs_and_Debugging"
+ 1179  nano README.md
+ 1180  clear
+ 1181  git add .
+ 1182  git commit -m "Made another Repo"
+ 1183  git push origin main
+ 1184  clear
+ 1185  cd ..
+ 1186  docker images
+ 1187  docker inspect 28bd5fe8b56d 
+ 1188  ls
+ 1189  mkdir "14_GitHub_Actions"
+ 1190  cd "14_GitHub_Actions"
+ 1191  nano hello.sh
+ 1192  chmod +x hello.sh
+ 1193  ./hello.sh
+ 1194  mkdir -p .github/workflows
+ 1195  nano .github/workflows
+ 1196  nano .github/workflows/test.yml
+ 1197  git add .
+ 1198  git commit -m "Build Repo"
+ 1199  git push origin main
+ 1200  ls
+ 1201  ls -a
+ 1202  git add .
+ 1203  git commit -m "Changed "
+ 1204  git push origin main
+ 1205  git add .
+ 1206  git commit -m "Chages"
+ 1207  git push origin main
+ 1208  ls
+ 1209  gh auth logout -h github.com -u abdul-923
+ 1210  gh auth login -h github.com
+ 1211  gh auth login github.com
+ 1212  gh auth login -h github.com
+ 1213  gh auth status
+ 1214  gh auth login
+ 1215  git push origin main
+ 1216  git add .
+ 1217  git commit -m "Changes3"
+ 1218  git push origin main
+ 1219  nano README.md
+ 1220  history
+ 1221  git add .
+ 1222  git commit -m "Upgraded CI Github Actions Lab"
+ 1223  git push origin main
+ 1224  clear
+ 1225  cd ..
+ 1226  ls
+ 1227  mkdir "15_Security_Basics"
+ 1228  cd "15_Security_Basics"
+ 1229  nano Dockerfile
+ 1230  nano 1script.sh
+ 1231  docker build --rm nonroot-user
+ 1232  docker build --rm nonroot-user .
+ 1233  docker build -t  nonroot-user .
+ 1234  docker run --rm nonroot-user
+ 1235  docker run --rm --cap-drop=NET_ADMIN alpine:latest ip link add dummy0 type dummy
+ 1236  docker run --rm --cap-add-NET_ADMIN alpine:latest ip link add dummy0 type dummy
+ 1237  docker run --rm --cap-add=NET_ADMIN alpine:latest ip link add dummy0 type dummy
+ 1238  docker run --rm --memory="256" --cpus="1" 
+ 1239  docker run --rm --memory="256" --cpus="1" .
+ 1240  docker run --rm --memory="256" --cpus="1" nonroot-user
+ 1241  docker run --rm --memory="5 " --cpus="1" nonroot-user
+ 1242  docker run --rm --memory="256m" --cpus="1" nonroot-user
+ 1243  docker run -d --memory="256m" --cpus="1" nonrootuser
+ 1244  docker run -d --memory="256m" --cpus="1" nonroot-user
+ 1245  docker ps
+ 1246  docker ps -a
+ 1247  docker ps -a 717d14c5a081 
+ 1248  nano RAEDME.md
+ 1249  nano README.md
+ 1250  git add .
+ 1251  git commit -m "Build Repo"
+ 1252  git push origin main
+ 1253  cd ..
+ 1254  mkdir "ARG and ENV"
+ 1255  cd "ARG and ENV"
+ 1256  nano Dockerfile
+ 1257  echo 'print("Application environment:", os.environ.get("APP_ENV"))' > app.py
+ 1258  docker build --build-arg APP_VERSION=2.0.0 -t arg-env-demo .
+ 1259  docker run arg-env-demo
+ 1260  nano app.py
+ 1261  docker run arg-env-demo
+ 1262  docker build --build-arg APP_VERSION=2.0.0 -t arg-env-demo .
+ 1263  docker run arg-env-demo
+ 1264  clear
+ 1265  git add .
+ 1266  git commit -m "Build a repo For Docker lab"
+ 1267  git push origin main
+ 1268  cd ..
+ 1269  ls 
+ 1270  git clone 
+ 1271  clear
+ 1272  git clone https://github.com/abdul-923/Mini-Docker-CI-CD-Project-.git
+ 1273  ls
+ 1274  cd ls
+ 1275  ls
+ 1276  cd Mini-Docker-CI-CD-Project
+ 1277  clear
+ 1278  ls
+ 1279  nano index.html
+ 1280  nano style.css
+ 1281  python3 -m http.server 8000
+ 1282  nano Dockerfile
+ 1283  dcoker build -t myproj .
+ 1284  docker images
+ 1285  docker build -t myproj .
+ 1286  docker images
+ 1287  ls
+ 1288  nano Dockerfile
+ 1289  docker build -t myproj .
+ 1290  docker images
+ 1291  docker run -d 8080:80 --name devops-proj myproj
+ 1292  docker run -d -p 8080:80 --name devops-proj myproj
+ 1293  docker ps
+ 1294  git init
+ 1295  git status
+ 1296  git add .
+ 1297  git commit -m "build Docker CI CD project"
+ 1298  git status
+ 1299  git push origin main
+ 1300  gh auth logout -h github.com -u abdul-923
+ 1301  gh auth login -h github.com
+ 1302  gh auth login
+ 1303  git push origin main
+ 1304  mkdir -p .github/workflows
+ 1305  nano .github/workflows/ci-cd.yml
+ 1306  git add .
+ 1307  git commit-m "Add Docker CI pipeline"
+ 1308  git commit -m "Add Docker CI pipeline"
+ 1309  git push origin main
+ 1310  nano .github/workflows/ci-cd.yml
+ 1311  git add .
+ 1312  git commit -m "Finalized Project"
+ 1313  git push origin main
+ 1314  git push --force-with-lease origin main
+ 1315  git push origin main
+ 1316  git pull --rebase origin main
+ 1317  git commit -m "Finalized Project"
+ 1318  git push origin main
+ 1319  clear
+ 1320  git status
+ 1321  git log --online --all --decorate -10
+ 1322  git log --oneline --all --decorate -10
+ 1323  git add .github/workflows/ci-cd.yml
+ 1324  git commit -m "Update CI/CD workflow"
+ 1325  git pull --rebase origin main
+ 1326  git push origin main
+ 1327  git rebase abort
+ 1328  git rebase --abort
+ 1329  git status
+ 1330  git push --force-with-lease origin main
+ 1331  push origin main
+ 1332  git push origin main
+ 1333  git add .
+ 1334  git commit -m "chak"
+ 1335  git push origin main
+ 1336  git pull --rebase origin main
+ 1337  git push origin main
+ 1338  sed -n '1,20l' .github/workflows/ci-cd.yml
+ 1339  docker login -u abdul623
+ 1340  git add .github/workflows/ci-cd.yml
+ 1341  git commit -m "Add Docker Hub login"
+ 1342  git push origin main
+ 1343  git log -1 --oneline
+ 1344  git push origin main
+ 1345  git add .
+ 1346  git commit -m "Latest"
+ 1347  git push origin main
+ 1348  git log -1 --oneline
+ 1349  git add .
+ 1350  git commit -m "Latest"
+ 1351  git push origin main
+ 1352  git log -1 --oneline
+ 1353  git add .github/workflows/ci-cd.yml
+ 1354  GIT COMMIT "lATEST cHANGES"
+ 1355  git commit -m "lATEST cHANGES"
+ 1356  git push origin main
+ 1357  git add .github/workflows/ci-cd.yml
+ 1358  git commit -m "pushed latest "
+ 1359  git push origin main
+ 1360  git add .github/workflows/ci-cd.yml
+ 1361  git commit -m "pushed latest "
+ 1362  git push origin main
+ 1363  git log -1 --oneline
+ 1364  git push origin main
+ 1365  git add .github/workflows/ci-cd.yml
+ 1366  git commit -m "sdgf "
+ 1367  git push origin main
+ 1368  ls
+ 1369  docker pull abdul623/my-web-app:latest
+ 1370  docker pull abdul923/my-web-app:latest
+ 1371  docker pull abdul623/my-web-app:latest
+ 1372  docker login -u abdul623
+ 1373  docker pull abdul623/my-web-app:latest
+ 1374  docker images
+ 1375  docker run -d -p 8080:80 --name test-web-app abdul623/my-web-app:latest
+ 1376  docker ps -a
+ 1377  docker ps
+ 1378  docker run -d -p 8080:80 --name test-web-app abdul623/my-web-app:latest
+ 1379  docker rm -f test-web-app
+ 1380  docker run -d -p 8080:80 --name test-web-app abdul623/my-web-app:latest
+ 1381  docker stop 4f1491b17e65 
+ 1382  docker run -d -p 8080:80 --name test-web-app abdul623/my-web-app:latest
+ 1383  docker ps
+ 1384  docker run -d -p 8080:80 --name test-web-app abdul623/my-web-app:latest
+ 1385  docker ps 
+ 1386  docker ps -a
+ 1387  docker images
+ 1388  docker stop 807ef5d56433 
+ 1389  docker ps -a
+ 1390  docker exit 807ef5d56433 
+ 1391  docker rm -f $(docker ps -aq)
+ 1392  docker ps -a
+ 1393  docker run -d -p 8080:80 --name test-web-app abdul623/my-web-app:latest
+ 1394  docker ps -a
+ 1395  docker stop 1e324d1ea566
+ 1396  docker images
+ 1397  docker rm -f nonroot-user:latest 
+ 1398  docker rm -f 48f97fe3e604 8541484afbc9 4bc6bc963e6d 
+ 1399  docker rmi -f 48f97fe3e604 8541484afbc9 4bc6bc963e6d 
+ 1400  docker images
+ 1401  docker rmi -f $(docker images -aq)
+ 1402  docker images
+ 1403  docker ps -a
+ 1404  docker rm -f 1e324d1ea566
+ 1405  docker ps -a
+ 1406  history
+ 1407  docker ps -a
+ 1408  docker images
+ 1409  df -h
+ 1410  clear
+ 1411  df -h
+ 1412  clear
+ 1413  sudo apt-get update && sudo apt-get upgrade -y
+ 1414  clear
+ 1415  ls
+ 1416  cd Ai-Operataions-EduQual-Level-6-Hands-on-labs
+ 1417  ls
+ 1418  mkdir "Python_Selenium"
+ 1419  cd "Python_Selenium"
+ 1420  mkdir "01_Launching_a_Browser_and_Opening_a_Page"
+ 1421  ls
+ 1422  cd "01_Launching_a_Browser_and_Opening_a_Page"
+ 1423  pip install selenium
+ 1424  sudo apt install python3-venv
+ 1425  source vevn/bin/activate
+ 1426  source venv/bin/activate
+ 1427  python3 -m venv venv
+ 1428  source venv/bin/activate
+ 1429  pip install selenium
+ 1430  python -c "import selenium; print(selenium.__version__)"
+ 1431  nano test.py
+ 1432  python3 test.py
+ 1433  google-chrome --version
+ 1434  nano launch_browser.py
+ 1435  python3 launch_browser.py
+ 1436  nano launch_browser.py
+ 1437  python3 launch_browser.py
+ 1438  nano launch_browser.py
+ 1439  python3 launch_browser.py
+ 1440  nano launch_browser.py
+ 1441  python3 launch_browser.py
+ 1442  nano launch_browser.py
+ 1443  exit
+ 1444  nano README.md
+ 1445  git add .
+ 1446  git commit -m "Started new Selenium Labs"
+ 1447  git push origin main
+ 1448  git add .
+ 1449  git commit -m "Renaming"
+ 1450  git push orign main
+ 1451  git push origin main
+ 1452  nano locate_by_id.py
+ 1453  python3 locate_by_id.py
+ 1454  so
+ 1455  source ../venv/bin/activate
+ 1456  python3 locate_by_id.py
+ 1457  nano README.md\
+ 1458  nano README.md
+ 1459  git add .
+ 1460  git commit -m "Build another selinium Repo"
+ 1461  git push origin main
+ 1462  python3 -m venv venv
+ 1463  ls
+ 1464  source venv/bin/activate
+ 1465  pip install selenium
+ 1466  clear
+ 1467  mkdir "02_Locating_Elements_by_ID_and_Name"
+ 1468  cd "02_Locating_Elements_by_ID_and_Name"
+ 1469  ls
+ 1470  clear
+ 1471  nano test_page.html
+ 1472  nano locate_by_id.py
+ 1473  ls
+ 1474  python3 locate_by_id.py
+ 1475  nano locate_by_id.py
+ 1476  python3 locate_by_id.py
+ 1477  nano test.page.html
+ 1478  nano test_page.html
+ 1479  python3 locate_by_id.py
+ 1480  pwd
+ 1481  ls -l test_page.html locate_by_id.py
+ 1482  grep -n "username" test_page.html
+ 1483  cat locate_by_id.py
+ 1484  python3 locate_by_id.py
+ 1485  cd ..
+ 1486  clear
+ 1487  source venv/bin/activate
+ 1488  mkdir "Locating_Elements_by_CSS_Selector_and_XPATH"
+ 1489  cd "Locating_Elements_by_CSS_Selector_and_XPATH"
+ 1490  nano test_page.html
+ 1491  nano css_selector.py
+ 1492  pyhton3 css_selector.py
+ 1493  python3 css_selector.py
+ 1494  ls
+ 1495  nano xpath.py
+ 1496  python3 xpath.py
+ 1497  nano xpath.py
+ 1498  nano css_selector.py
+ 1499  nano xpath.py
+ 1500  nano README.md
+ 1501  git add .
+ 1502  git commit -m "Build Another Repo"
+ 1503  git push origin main
+ 1504  clear
+ 1505  cd ..
+ 1506  mkdir "04_Clicking_a_Button_and_checking_validation"
+ 1507  ls
+ 1508  cd "04_Clicking_a_Button_and_checking_validation"
+ 1509  source ../venv/bin/activate
+ 1510  clear
+ 1511  nano test_page.html
+ 1512  xdg-open test_page.html
+ 1513  nano click_button.py
+ 1514  python3  click_button.py
+ 1515  nano README.md
+ 1516  nano click_button.py
+ 1517  nano test_page.html
+ 1518  clear
+ 1519  git add .
+ 1520  git commit -m "Build a repo"
+ 1521  git push origin main
+ 1522  clear
+ 1523  cd ..
+ 1524  clear
+ 1525  mkdir "Typing_into_form_fields_send_keys"
+ 1526  cd "Typing_into_form_fields_send_keys"
+ 1527  source ../venv/bin/activate
+ 1528  nano test_page.html
+ 1529  nano send_keys_lab.py
+ 1530  ls
+ 1531  google-chrome test_page.html
+ 1532  python3 send_keys_lab.py
+ 1533  nano send_keys_lab.py
+ 1534  python3 send_keys_lab.py
+ 1535  nano send_keys_lab.py
+ 1536  python3 send_keys_lab.py
+ 1537  nano send_keys_lab.py
+ 1538  nano test_page.html
+ 1539  nano README.md
+ 1540  git add .
+ 1541  git commit -m "Buil Repo"
+ 1542  git push origin main
+ 1543  clear
+ 1544  git add .
+ 1545  git commit -m "Changes made in README"
+ 1546  git push origin main
+ 1547  source .. /venv/bin/activate
+ 1548  history
+ 1549  clear
+ 1550  source ../venv/bin/activate
+ 1551  history
+ 1552  clear
+ 1553  source ../venv/bin/activate
+ 1554  cd ..
+ 1555  source ../venv/bin/activate
+ 1556  ls
+ 1557  cd Python_Selenium
+ 1558  ls
+ 1559  source venv/bin/activate
+ 1560  mkdir "06_Submitting_a_form"
+ 1561  cd "06_Submitting_a_form"
+ 1562  nano form.html
+ 1563  google-chrome form.html
+ 1564  nano form.py
+ 1565  python3 form.py
+ 1566  nano form.py
+ 1567  nano form.html
+ 1568  nano README.md
+ 1569  git add .
+ 1570  git commit -m "Build another repo for new lab"
+ 1571  git push origin main
+ 1572  cd ..
+ 1573  mkdir "Checking_page_title_content"
+ 1574  clear
+ 1575  ls
+ 1576  cd "Checking_page_title_content
+ 1577  "
+ 1578  cd "Checking_page_title_content"
+ 1579  nano check.page.py
+ 1580  cat check.page.py
+ 1581  python3 check_page.py
+ 1582  ls
+ 1583  python3 check_page.py
+ 1584  nano check2.page.py
+ 1585  python3 check2_page.py
+ 1586  nano check2.page.py
+ 1587  nano check2_page.py
+ 1588  python3 check2_page.py
+ 1589  nano check2_page.py
+ 1590  python3 check2_page.py
+ 1591  nano check2_page.py
+ 1592  python3 check2_page.py
+ 1593  nano README.md
+ 1594  nano check.page.py
+ 1595  git commit -m "Build another repo for new lab"clear
+ 1596  clear
+ 1597  git add .
+ 1598  git commit -m "Build new repo"
+ 1599  git push origin main
+ 1600  clear
+ 1601  cd ..
+ 1602  mkdir "Handling_waits_Implicit_Explicit"
+ 1603  cd "Handling_waits_Implicit_Explicit"
+ 1604  cd ..
+ 1605  mv "Handling_waits_Implicit_Explicit" "08_Handling_waits_Implicit_Explicit" 
+ 1606  ls
+ 1607  cd "08_Handling_waits_Implicit_Explicit"
+ 1608  pwd
+ 1609  nano implicit_wait.py
+ 1610  python3 implicit_wait.py
+ 1611  nano implicit_wait.py
+ 1612  python3 implicit_wait.py
+ 1613  nano implicit_wait.py
+ 1614  python3 implicit_wait.py
+ 1615  nano explicit_wait.py
+ 1616  python3 explicit_wait.py
+ 1617  nano explicit_wait.py
+ 1618  nano implicit_wait.py
+ 1619  nano wait_test.html
+ 1620  nano implicit2_test.py
+ 1621  python3 implicit2_test.py
+ 1622  nano explicit2.py
+ 1623  python3 explicit2.py
+ 1624  ls
+ 1625  grep myButton wait_test.html
+ 1626  python3 implicit2_test.py
+ 1627  pwd
+ 1628  ls -l wait-test.html
+ 1629  ls
+ 1630  nano explicit2.py
+ 1631  ls -l wait_test.html
+ 1632  python3 -c "from pathlib import Path; p=Path('wait_test.html').resolve(); print(p); print(p.exists()); print(p.as_uri())"
+ 1633  python3 implicit2_test.py
+ 1634  nano wait_test.html
+ 1635  python3 implicit2_test.py
+ 1636  python3 explicit2.py
+ 1637  nano README.md
+ 1638  nano wait_test.html
+ 1639  git add .
+ 1640  git conmmit -m "Build repo for new lab"
+ 1641  git conmmit -m "Build repo f"
+ 1642  git commit -m "Build repo for new lab"
+ 1643  git push origin main
+ 1644  clear
+ 1645  cd ..
+ 1646  source /venv/bin/activate
+ 1647  source venv/bin/activate
+ 1648  mkdir "Taking_Screenshots"
+ 1649  cd "Taking_Screenshots"
+ 1650  nano screenshot.py
+ 1651  nano screenshot.py\
+ 1652  nano screenshot.py
+ 1653  ls
+ 1654  python3 screenshot.py
+ 1655  nano screenshot.py
+ 1656  source ../venv/bin/activate
+ 1657  python3 screenshot.py
+ 1658  nano screenshot.py
+ 1659  nano screenshot2.py
+ 1660  python3 screenshot2.py
+ 1661  ls
+ 1662  nano screenshot2.py
+ 1663  nano screenshot.py
+ 1664  nano README.md
+ 1665  clear
+ 1666  git add .
+ 1667  git commit -m "New Repo for new lab"
+ 1668  git push origin main
+ 1669  git add .
+ 1670  git commit -m "Build repo"
+ 1671  git push origin main
+ 1672  source venv/bin/activate
+ 1673  mkdir "10_Locating_Multiple_Elements"
+ 1674  cd "10_Locating_Multiple_Elements"
+ 1675  nano multiple_elements.py
+ 1676  python3 multiple_elements.py
+ 1677  nano multiple_elements.py
+ 1678  python3 multiple_elements.py
+ 1679  nano multiple_elements.py
+ 1680  nano README.md
+ 1681  nano multiple_elements.py
+ 1682  git add .
+ 1683  git commit -m "Build Repo"
+ 1684  git push origin main
+ 1685  clear
+ 1686  cd ..
+ 1687  source venv/bin/activate
+ 1688  mkdir "Handling_Dropdowns"
+ 1689  cd "Handling_Dropdowns"
+ 1690  nano dropdown.html
+ 1691  google-chrome dropdown.html
+ 1692  nano dropdown.py
+ 1693  ls
+ 1694  nano dropdown.py
+ 1695  python3 dropdown.py
+ 1696  nano dropdown.html
+ 1697  nano README.md
+ 1698  git add .
+ 1699  git commit -m "Build Repo"
+ 1700  git push origin main
+ 1701  cd ..
+ 1702  ls
+ 1703  clear
+ 1704  ls
+ 1705  mkdir "12_Handling_Alerts"
+ 1706  cd "12_Handling_Alerts"
+ 1707  nano alerts.py
+ 1708  python3 alerts.py
+ 1709  mv alerts.py accept_alert.py
+ 1710  nano dismiss_alert.py
+ 1711  python3 dismiss_alert.py
+ 1712  nano dismiss_alert.py
+ 1713  nano accept_alert.py
+ 1714  nano README.md
+ 1715  git add .
+ 1716  git commit "Build another repo for lab"
+ 1717  git commit -m "Build another repo for lab"
+ 1718  git push origin main
+ 1719  clear
+ 1720  cd ..
+ 1721  clear
+ 1722  ls
+ 1723  mkdir "13_Handling_multiple_tabs_windows"
+ 1724  cd "13_Handling_multiple_tabs_windows"
+ 1725  nano test_page.html
+ 1726  nano multiple_tabs.py
+ 1727  python3 multiple_tabs.py
+ 1728  nano multiple_tabs.py
+ 1729  python3 multiple_tabs.py
+ 1730  nano multiple_tabs.py
+ 1731  python3 multiple_tabs.py
+ 1732  nano README.md
+ 1733  git add .
+ 1734  git commit -m "Build Repo"
+ 1735  git push origin main
+ 1736  clear
+ 1737  cd ..
+ 1738  exit
+ 1739  source venv/bin/activate
+ 1740  mkdir "14_Handling_iframes"
+ 1741  cd "14_Handling_iframes"
+ 1742  nano index.html
+ 1743  nano frame.html
+ 1744  google-chrome index.html
+ 1745  nano iframe_test.py
+ 1746  python3 iframe_test.py
+ 1747  nano README.md
+ 1748  git add .
+ 1749  git commit -m "Build another Lab Repo"
+ 1750  git push origin main
+ 1751  clear
+ 1752  cd ..
+ 1753  mkdir "15_Running_Selenium_Headles"
+ 1754  cd "15_Running_Selenium_Headles"
+ 1755  nano headless.py
+ 1756  python3 headless.py
+ 1757  ls
+ 1758  nano README.md
+ 1759  git add .
+ 1760  git commit -m "Build repo for another lab"
+ 1761  git push origin main
+ 1762  source venv/bin/activate
+ 1763  mkdir "16_End_Mini_Project"
+ 1764  cd "16_End_Mini_Project"
+ 1765  nano end_test.py
+ 1766  python3 end_test.py
+ 1767  nano end_test.py
+ 1768  python3 end_test.py
+ 1769  nano README.md
+ 1770  cd ..
+ 1771  mkdir "17_Login_and_Shopping_Cart_Automation_Mini_Project"
+ 1772  cd "17_Login_and_Shopping_Cart_Automation_Mini_Project"
+ 1773  clear
+ 1774  cd "17_Login_and_Shopping_Cart_Automation_Mini_Project"
+ 1775  nano shop.py
+ 1776  python3 shop.py
+ 1777  nano README.md
+ 1778  git add .
+ 1779  git commit -m "Build Mini Projects Labs Repo"
+ 1780  git push origin main
+ 1781  cd ..
+ 1782  git add .
+ 1783  git commit "LAst Projects LAbs Repo"
+ 1784  git commit -m "LAst Projects LAbs Repo"
+ 1785  git push origin main
+ 1786  nano README.md
+ 1787  git add .
+ 1788  git commit "Parent Repo Readme""
+ 1789  git commit "Parent Repo Readme"
+ 1790  git commit -m "Parent Repo Readme"
+ 1791  git push origin main
+ 1792  git init
+ 1793  git add .
+ 1794  git commit -m "initial-commit" 
+ 1795  git remote add origin https://github.com/abdul-923/Login_and_Shopping_Cart_Automation_Mini_Python_Selenium_Project.git
+ 1796  git branch -M main
+ 1797  git push -u origin main
+ 1798  sestatus
+ 1799  sudo apt install policycoreutils
+ 1800  sestatus
+ 1801  sudo shutdown
+ 1802  echo$
+ 1803  $echo
+ 1804  cd ..
+ 1805  cd ..\
+ 1806  cd ..
+ 1807  ifconfig -a
+ 1808  ifconfig 
+ 1809  ipconfig 
+ 1810  ipconfig -a
+ 1811  ipconfig -i
+ 1812  ifconfig -i
+ 1813  ip a
+ 1814  sudo apt install nfs-kernel-server
+ 1815  sudo mkdir -p /srv/nfs/share
+ 1816  echo "Hello from ubuntu server" | sudo tee /srv/nfs/share/test.txt
+ 1817  ls -l /srv/nfs/share
+ 1818  sudo nano /etc/exports
+ 1819  sudo exportfs -rav
+ 1820  sudo exportfs -v
+ 1821  sudo systemctl status nfs-kernel-server
+ 1822  sudo systemctl start nfs-kernel-server
+ 1823  sudo systemctl status nfs-kernel-server
+ 1824  sudo nano /etc/exports
+ 1825  sudo exportfs -rav
+ 1826  sudo exportfs -v
+ 1827  clear
+ 1828  ip a
+ 1829  clear
+ 1830  ssh redhat@192.168.8.131
+ 1831  scp /home/ubuntu/Pictures/Screenshots/*.png redhat@192.168.8.131:/home/redhat/Ai-Operataions-EduQual-Level-6-Hands-on-labs/Red_Hat_System_Administration_1/09_Working_with_Network_File_Systems_NFS_&_CIFS
+ 1832  scp /home/ubuntu/Pictures/Screenshots/*.png redhat@192.168.8.131:/home/redhat/
+ 1833  clear
+ 1834  ip a
+ 1835  clear
+ 1836  ip a
+ 1837  hostname -I
+ 1838  cd ..
+ 1839  mkdir "DevSysyOps Engineering Labs"
+ 1840  ls
+ 1841  cd 'DevSysyOps Engineering Labs' 
+ 1842  mkdir "01_Setting_up_an_AWS_EC2_Instance_for_Docker"
+ 1843  cd "01_Setting_up_an_AWS_EC2_Instance_for_Docker"
+ 1844  nano README.md
+ 1845  git add .
+ 1846  git commit -m "Added DevSysOps lab"
+ 1847  git push origin main
+ 1848  git pull origin main --rebase
+ 1849  git push origin main
+ 1850  ssh -i "my-test-aws.pem" ubuntu@ec2-44-214-180-16.compute-1.amazonaws.com
+ 1851  chmod 400 my-test-aws.pem
+ 1852  ssh -i "my-test-aws.pem" ubuntu@ec2-44-214-180-16.compute-1.amazonaws.com
+ 1853  git status
+ 1854  git push origin main
+ 1855  git add .
+ 1856  git commit "Added Lab"
+ 1857  git commit -m "Added Lab"
+ 1858  git push origin main
+ 1859  clear
+ 1860  ls
+ 1861  cd ..
+ 1862  ls
+ 1863  pwd
+ 1864  mkdir "03_Running_Docker_Containers_on_AWS_Elastic_Container_Service_(ECS)"
+ 1865  cd "03_Running_Docker_Containers_on_AWS_Elastic_Container_Service_(ECS)"
+ 1866  docker images
+ 1867  history
+ 1868  clear
+ 1869  aws ecr describe-repositories --repository-names aws-ecr-lab --region us-east-1
+ 1870  aws ecr create-repository --repository-name aws-ecr-lab --region us-east-1
+ 1871  aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 599117007421.dkr.ecr.us-east-1.amazonaws.com
+ 1872  aws-ecr-lab:latest
+ 1873  docker tag aws-ecr-lab:latest 599117007421.dkr.ecr.us-east-1.amazonaws.com/aws-ecr-lab:latest 
+ 1874  docker push 599117007421.dkr.ecr.us-east-1.amazonaws.com/aws-ecr-lab:latest
+ 1875  aws iam create-service-linked-role --aws-service-name ecs.amazonaws.com
+ 1876  aws iam get-role --role-name AWSServiceRoleForECS
+ 1877  [200~aws ecr describe-images --repository-name aws-ecr-lab --region us-east-1~
+ 1878  aws ecr describe-images --repository-name aws-ecr-lab --region us-east-1
+ 1879  [200~aws ecr describe-images --repository-name aws-ecr-lab --region us-east-1~aws ecr describe-images --repository-name aws-ecr-lab --region us-east-1
+ 1880  aws ecr describe-images --repository-name aws-ecr-lab --region us-east-1
+ 1881  [200~aws ecr describe-images --repository-name aws-ecr-lab --region us-east-1 --query 'imageDetails[].imageTags'~
+ 1882  aws ecr describe-images --repository-name aws-ecr-lab --region us-east-1 --query 'imageDetails[].imageTags'
+ 1883  clearclearsadsdsd
+ 1884  history >> commands_history.txt
+ 1885  nano README.md
+ 1886  cd ..
+ 1887  git add .
+ 1888  git commit -m "Build Lab and Pushed"
+ 1889  git push origin main
+ 1890  git status
+ 1891  git branch --show-current
+ 1892  git log --oneline --decorste -5
+ 1893  git log --oneline --decorate -5
+ 1894  ls 
+ 1895  git push origin main
+ 1896  git add -u -- "DevSysyOps Engineering Labs"
+ 1897  git commit -m "Remove duplicate DevSysyOps Engineering Labs"
+ 1898  git push origin main
+ 1899  clear
+ 1900  clear
+ 1901  aws sts get-caller-identity
+ 1902  aws ecr create-repository --repository-name aws-codebuild-lab --region us-east-1
+ 1903  aws ecr describe-repositories --repository-name aws-codebuild-lab --region us-east-1
+ 1904  clear
+ 1905  nano buildspec.yml
+ 1906  ls
+ 1907  git init
+ 1908  git add .
+ 1909  git commit -m "Add AWS Codebuild Docker Lab"
+ 1910  git push origin main
+ 1911  cd ..
+ 1912  git push origin main
+ 1913  cd "\DevSysyOps_Engineering_Labs"
+ 1914  ls
+ 1915  clear
+ 1916  pwd
+ 1917  git remote -v
+ 1918  git status
+ 1919  git rev-parse --show-toplevel
+ 1920  git add "DevSysyOps_Engineering_Labs/04_Implementing_Continuous_Integration_(CI)_with_AWS_CodeBuild_&_Docker"
+ 1921  git status
+ 1922  git add "04_Implementing_Continuous_Integration_(CI)_with_AWS_CodeBuild_&_Docker"
+ 1923  git status
+ 1924  git rm --cached "04_Implementing_Continuous_Integration_(CI)_with_AWS_CodeBuild_&_Docker"
+ 1925  git rm -f --cached "04_Implementing_Continuous_Integration_(CI)_with_AWS_CodeBuild_&_Docker"
+ 1926  git add "04_Implementing_Continuous_Integration_(CI)_with_AWS_CodeBuild_&_Docker"
+ 1927  git status
+ 1928  rm -rf "04_Implementing_Continuous_Integration_(CI)_with_AWS_CodeBuild_&_Docker/.git"
+ 1929  git add "04_Implementing_Continuous_Integration_(CI)_with_AWS_CodeBuild_&_Docker"
+ 1930  git status
+ 1931  git rm --cached -f "04_Implementing_Continuous_Integration_(CI)_with_AWS_CodeBuild_&_Docker"
+ 1932  git add "04_Implementing_Continuous_Integration_(CI)_with_AWS_CodeBuild_&_Docker"
+ 1933  git status
+ 1934  git commit -m "Add AWS CodeBuild Docker Lab"
+ 1935  git push origin main
+ 1936  clear
+ 1937  git add .
+ 1938  git commit -m "Fix Codebuild"
+ 1939  git push origin main
+ 1940  git ls-tree -r --name-only HEAD | grep -E 'buildspec.yml|Dockerfile'
+ 1941  git ls-tree -r --name-only HEAD | grep '/Dockerfile$'
+ 1942  git add .
+ 1943  git commit -m "fixed yaml file for aws"
+ 1944  git push origin main
+ 1945  history >> Commands_History.txt
+ 1946  nano README.md
+ 1947  git add .
+ 1948  git commit -m "Finalized Lab Project"
+ 1949  git push origin main
+ 1950  exit
+ 1951  clear
+ 1952  nano app.js
+ 1953  nano package.json
+ 1954  nano Dcokerfile
+ 1955  docker build -t aws-codepipeline-lab .
+ 1956  docker build -t aws-codepipeline-lab.
+ 1957  docker build -t aws-codepipeline-lab .
+ 1958  ls
+ 1959  cat Dockerfile
+ 1960  mv Dcokerfile Dockerfile
+ 1961  docker build -t aws-codepipeline-lab .
+ 1962  nano Dockerfile
+ 1963  docker build -t aws-codepipeline-lab .
+ 1964  docker run --rm aws-codepipeline-lab
+ 1965  docker images
+ 1966  docker ps
+ 1967  docker ps -a
+ 1968  git status
+ 1969  git add .
+ 1970  git status
+ 1971  git commit -m "Build CodePipeline Lab"
+ 1972  git push origin main
+ 1973  clear
+ 1974  ls
+ 1975  nan buildspec.yml
+ 1976  nano buildspec.yml
+ 1977  git add .
+ 1978  git commit -m "Added yaml file"
+ 1979  git push origin main
+ 1980  node app.js
+ 1981  sudo apt install nodejs
+ 1982  node app.js
+ 1983  git add .
+ 1984  git commit -m "updated app.js"
+ 1985  git push origin main
+ 1986  git add ,
+ 1987  git commit -m "yaml"
+ 1988  git add .
+ 1989  git commit -m "yaml"
+ 1990  git push origin main
+ 1991  history >> Commands_history.txt
+ 1992  nano README.md
+ 1993  clear
+ 1994  git add .
+ 1995  git commit -m "Finalized"
+ 1996  git push origin main
+ 1997  exiot
+ 1998  exit
+ 1999  curl http://localhost:3000
+ 2000  mkdir "06_Docker_Volumes_&_Persistent_Storage_with_Amazon_EBS"
+ 2001  cd "06_Docker_Volumes_&_Persistent_Storage_with_Amazon_EBS"
+ 2002  ls
+ 2003  ls -a
+ 2004  ls -h
+ 2005  ls -lh
+ 2006  ssh ubuntu@3.87.168.246
+ 2007  ssh -i ./lab7.pem ubuntu@3.87.168.246
+ 2008  chmod 400 lab7.pem
+ 2009  ssh ubuntu@3.87.168.246
+ 2010  ssh -i ./lab7.pem ubuntu@3.87.168.246
+ 2011  history >> commands_history
