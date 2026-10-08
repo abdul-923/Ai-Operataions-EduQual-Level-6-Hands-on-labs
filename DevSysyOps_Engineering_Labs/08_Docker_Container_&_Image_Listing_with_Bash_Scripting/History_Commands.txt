@@ -1,0 +1,23 @@
+
+ 2000  mkdir "08_Docker_Container_&_Image_Listing_with_Bash_Scripting"
+ 2001  vim lab.sh
+ 2002  ./lab.sh
+ 2003  chmod +x lab.sh
+ 2004  ./lab.sh
+ 2005  vim lab.sh
+ 2006  ./lab.sh
+ 2007  vim lab.sh
+ 2008  ./lab.sh
+ 2009  vim lab.sh
+ 2010  ./lab.sh
+ 2011  vim lab.sh
+ 2012  ./lab.sh
+ 2013  vim lab.sh
+ 2014  ./lab.sh
+ 2015  vim lab.sh
+ 2016  ./lab.sh
+ 2017  vim lab.sh
+ 2018  ./lab.sh
+ 2019  vim lab.sh
+ 2020  nano README.md
+ 2021  history >> History_Commands.txt
