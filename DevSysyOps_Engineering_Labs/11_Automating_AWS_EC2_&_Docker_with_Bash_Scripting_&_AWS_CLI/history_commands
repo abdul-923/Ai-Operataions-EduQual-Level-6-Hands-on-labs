@@ -1,0 +1,14 @@
+    1  clear
+    2  aws --cli
+    3  aws --version
+    4  aws sts get-caller-identity
+    5  clear
+    6  mkdir ""11_Automating_AWS_EC2_&_Docker_with_Bash_Scripting_&_AWS_CLI
+    7  mkdir "11_Automating_AWS_EC2_&_Docker_with_Bash_Scripting_&_AWS_CLI"
+    8  ls
+    9  cd  '11_Automating_AWS_EC2_&_Docker_with_Bash_Scripting_&_AWS_CLI'
+   10  clear
+   11  vim aws_docker_integration.sh
+   12  chmod +x aws_docker_integration.sh
+   13  ./aws_docker_integration.sh
+   14  history >> history_commands
