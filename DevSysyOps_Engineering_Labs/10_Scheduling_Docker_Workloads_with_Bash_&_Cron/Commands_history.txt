@@ -1,0 +1,17 @@
+    1  clear
+    2  cd ..
+    3  mkdir "10_Scheduling_Docker_Workloads_with_Bash_&_Cron"
+    4  cd "10_Scheduling_Docker_Workloads_with_Bash_&_Cron"
+    5  lab.sh
+    6  vim lab.sh
+    7  chmod +x lab.sh
+    8  bash lab.sh
+    9  docker build -t backup_tool:latest .
+   10  vim Dockerfile
+   11  docker build -t backup_tool:latest .
+   12  ./lab.sh
+   13  docker images
+   14  ls -l ~/backup_data
+   15  cat ~/backup_data/file.txt
+   16  cat ~/backup_data/file1.txt
+   17  history >> Commands_history.txt
