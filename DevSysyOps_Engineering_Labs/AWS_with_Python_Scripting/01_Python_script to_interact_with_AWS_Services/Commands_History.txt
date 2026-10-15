@@ -1,0 +1,17 @@
+    1  history
+    2  clear
+    3  pip3 --version
+    4  python3 -m pip show boto3
+    5  python3 -n pip install boto3
+    6  python3 -m pip install boto3
+    7  python3 -m venv .venv
+    8  python3 -m pip install boto3
+    9  ls
+   10  ls -a
+   11  source .venv/bin/activate
+   12  python3 -m pip install boto3
+   13  ls -a
+   14  aws sts get-caller-identity
+   15  vim listing_buckets.py
+   16  python listing_buckets.py
+   17  history >> Commands_History.txt
