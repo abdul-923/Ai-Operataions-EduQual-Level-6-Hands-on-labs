@@ -1,5 +1,5 @@
 
-# Lab 2 – Basic Python Script to Interact with AWS Services
+# Lab 1 – Basic Python Script to Interact with AWS Services
 
 ## Overview
 
