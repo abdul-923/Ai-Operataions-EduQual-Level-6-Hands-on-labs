@@ -1,0 +1,6 @@
+    1  history -w
+    2  aws lambda wait function-active-v2 --function-name MyHelloLambda
+    3  aws lambda invoke --function-name MyHelloLambda output.txt
+    4  cat output.txt
+    5  nano README.md
+    6  history >> Commands_History.txt
