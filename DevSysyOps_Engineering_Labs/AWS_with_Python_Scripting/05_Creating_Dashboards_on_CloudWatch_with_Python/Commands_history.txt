@@ -1,0 +1,49 @@
+    1  history -w
+    2  history -w
+    3  clear
+    4  clear
+    5  cd ..
+    6  ls
+    7  clear
+    8  mkdir "04_Deploying_Lambda_Functions_with_Python"
+    9  cd "04_Deploying_Lambda_Functions_with_Python"
+   10  vim policy.json
+   11  aws iam create-role --role-name MyLambdaRole --assume-role-policy-document file://trust-policy.json
+   12  aws iam create-role --role-name MyLambdaRole --assume-role-policy-document file://policy.json
+   13  vim policy.json
+   14  python3 -m json.tool policy.json
+   15  aws iam create-role --role-name MyLambdaRole --assume-role-policy-document file://policy.json
+   16  aws iam create-role --role-name MyLambdaRole --assume-role-policy-document '{"Version":"2012-10-17","Statement":[{"Effect":"Allow","Principal":{"Service":"lambda.amazonaws.com"},"Action":"sts:AssumeRole"}]}'
+   17  aws iam attach-role-policy --policy-arn arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole --role-name MyLambdaRole
+   18  sleep 10
+   19  ls my_lambda_package/my_lambda_function.zip
+   20  ls -r
+   21  vim lambda_function.py
+   22  mkdir -p my_lambda_package
+   23  cp lambda_function.py my_lambda_package/
+   24  cd my_lambda_package
+   25  zip my_lambda_function.zip lambda_function.py
+   26  cd ..
+   27  ls -l my_lambda_package/my_lambda_function.zip
+   28  pwd
+   29  aws lambda create-function --function-name MyHelloLambda --runtime python3.13 --role arn:aws:iam::599117007421:role/MyLambdaRole --handler lambda_function.lambda_handler --zip-file fileb://my_lambda_package/my_lambda_function.zip
+   30  [200~aws lambda wait function-active-v2 --function-name MyHelloLambda~
+   31  aws lambda wait function-active-v2 --function-name MyHelloLambda
+   32  aws lambda wait function-active-v2 --function-name MyHelloLls
+   33  ls
+   34  mkdir "05_Creating_Dashboards_on_CloudWatch_with_Python"
+   35  cd "05_Creating_Dashboards_on_CloudWatch_with_Python"
+   36  python3 -m venv .venv
+   37  source .venv/bin/activate
+   38  python -m pip install boto3
+   39  aws ec2 describe-instances --region us-east-1 --query "Reservations[].Instances[].[InstanceId,State.Name]" --output table
+   40  aws configure get region
+   41  aws ec2 describe-instances --region us-east-1 --query "Reservations[].Instances[].[InstanceId,State.Name]" --output table
+   42  nano cloudwatch_dashboard.py
+   43  python3 cloudwatch_dashboard.py
+   44  aws cloudwatch get-metric-statistics --region us-east-1 --namespace AWS/EC2 --metric-name CPUUtilization --dimensions Name=InstanceId,Value=i-080042c78ecf5b86a --start-time "$(date -u -d '6 hours ago' +%Y-%m-%dT%H:%M:%SZ)" --end-time "$(date -u +%Y-%m-%dT%H:%M:%SZ)" --period 300 --statistics Average
+   45  aws ec2 describe-instances --region us-east-1 --query "Reservations[].Instances[].[InstanceId,State.Name]" --output table
+   46  aws cloudwatch get-metric-statistics --region us-east-1 --namespace AWS/EC2 --metric-name CPUUtilization --dimensions Name=InstanceId,Value=i-086642c7c8cf5b86a --start-time "$(date -u -d '6 hours ago' +%Y-%m-%dT%H:%M:%SZ)" --end-time "$(date -u +%Y-%m-%dT%H:%M:%SZ)" --period 300 --statistics Average
+   47  python3 cloudwatch_dashboard.py
+   48  nano README.md
+   49  history >> Commands_history.txt
