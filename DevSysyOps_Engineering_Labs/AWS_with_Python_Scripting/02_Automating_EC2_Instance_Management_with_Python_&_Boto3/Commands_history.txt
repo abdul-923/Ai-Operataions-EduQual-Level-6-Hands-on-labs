@@ -1,0 +1,14 @@
+    1  clear
+    2  mkdir "02_Automating_EC2_Instance_Management_with_Python_&_Boto3"
+    3  cd "02_Automating_EC2_Instance_Management_with_Python_&_Boto3"
+    4  vim ec2_manager.py
+    5  python3 ec2_manager.py
+    6  source .venv/bin/activate
+    7  python3 -m venv .venv
+    8  source .venv/bin/activate
+    9  python -m pip install boto3
+   10  python3 ec2_manager.py
+   11  vim ec2_manager.py
+   12  python3 ec2_manager.py
+   13  vim README.md
+   14  history >> Commands_history.txt
